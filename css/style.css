@@ -1,0 +1,111 @@
+:root{
+	--primary-color:#111111;
+	--one-color:#ffb400;
+	--text-color:#fff;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+html{
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1rem = 10px , 10px / 16px = 62.5*/
+}
+body{
+	line-height: 1.6;
+	background-color: var(--primary-color);
+	font-family: sans-serif;
+	position: relative;
+}
+img{
+	width: 50rem;
+    height: 50rem;
+}
+/*Layout here*/
+header{
+	height: 100vh;
+	/*background-color: red;*/
+	background-image: linear-gradient(
+70deg
+, #ffb400 13%, #ffb400 27% , transparent 19%);
+	display: flex;
+}
+.image__section{
+	padding: 6rem;
+	flex:0 0 50%; 
+}
+.content__section{
+	flex:0 0 50%; 
+	color:var( --text-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*align-items: center;*/
+}
+.image{
+	border-radius: 1rem;
+}
+/*Tyography*/
+.main__heading{
+	font-size: 6rem;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.2;
+}
+.main__heading-primary{
+	color: var(--one-color);
+}
+.paragraph{
+	font-size: 1.6rem;
+	margin-top: 1.5rem;
+	padding-right: 9rem
+}
+/*BUtton style*/
+.btn{
+	background-color: transparent;
+	border:4px solid var(--one-color);
+	display: block;
+	padding: 2rem;
+	width: 40rem;
+	color: var(--text-color);
+	text-transform: uppercase;
+	font-size: 2rem;
+	border-radius: 5px;
+	margin-top: 4rem;
+}
+.buttonsDiv{
+	position: absolute;
+	position: absolute;
+    top: 4rem;
+    right: 0;
+
+    display: flex;
+}
+.item{
+	width: 2rem;
+	height: 2rem;
+	border:1px solid var(--text-color);
+	margin-right: 2rem;
+}
+#color1{
+	background-color:  #6957af;
+	transition: all .5s;
+}
+#color2{
+	background-color: #f72b1c;
+}
+#color3{
+	background-color:  #8329d6;
+}
+#color4{
+	background-color:  #bb4c73;
+}
+#color5{
+	background-color:  #9acd32;
+}
